@@ -2,63 +2,50 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio | Rhei Joven Genove Juan</title>
+<title>My Portfolio | Rhei Joven Genove Juan</title>
 <style>
-:root{--bg:#f4f4f9;--text:#333;--accent:#2563eb}
-body{font-family:system-ui,sans-serif;line-height:1.6;margin:0;background:var(--bg);color:var(--text)}
-header,section{max-width:800px;margin:2rem auto;padding:0 1rem}
-h1,h2{color:var(--accent)}
-.card{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1);margin-bottom:1rem}
-ul{padding-left:1.2rem}
-footer{text-align:center;font-size:0.9rem;padding:2rem}
-@media(max-width:600px){header{text-align:center}}
+:root { --red: #dc2626; --dark: #1f2937; }
+body { font-family: sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 20px; max-width: 800px; margin: auto; }
+header { border-bottom: 3px solid var(--red); padding-bottom: 1rem; margin-bottom: 2rem; }
+h1, h2 { color: var(--red); }
+.card { background: #f9fafb; padding: 1.5rem; border-left: 5px solid var(--red); margin-bottom: 1rem; }
+.meta { font-size: 0.9rem; color: #666; }
+footer { margin-top: 3rem; font-size: 0.8rem; text-align: center; color: #999; }
 </style>
 </head>
 <body>
 <header>
 <h1>Rhei Joven Genove Juan</h1>
-<p>Researcher & Academic | University of the Philippines Diliman</p>
+<p>Researcher | University of the Philippines Diliman</p>
 </header>
-<section id="intro">
-<h2>About Me</h2>
-<p>Dedicated researcher specializing in advanced image processing, computer vision, and quality assessment. Passionate about bridging the gap between theoretical research and practical technological applications.</p>
-</section>
-<section id="projects">
-<h2>Selected Publications</h2>
+<section>
+<h2>Research Profile</h2>
+<p>Focusing on Image Enhancement, Advanced Image Processing, and Quality Assessment.</p>
 <div class="card">
 <h3>Vision-based bicycle and motorcycle detection using a YOLO-based Network</h3>
-<p><em>Journal of Physics: Conference Series (2021)</em> | Citations: 6</p>
+<p class="meta">Journal of Physics: Conference Series (2021) | Citations: 6</p>
 </div>
 <div class="card">
 <h3>Effect of downsampling on the quality and resolution of super-resolved images</h3>
-<p><em>Proceedings of the Samahang Pisika ng Pilipinas (2019)</em> | Citations: 0</p>
+<p class="meta">Proceedings of the Samahang Pisika ng Pilipinas (2019) | Citations: 0</p>
 </div>
 </section>
-<section id="skills">
-<h2>Research Interests</h2>
-<div class="card">
+<section>
+<h2>Metrics</h2>
 <ul>
-<li>Image Enhancement Techniques</li>
-<li>Advanced Image Processing</li>
-<li>Image and Video Quality Assessment</li>
-<li>Object Detection (YOLO-based Networks)</li>
+<li>Total Papers: 2</li>
+<li>Total Citations: 6</li>
+<li>h-index: 1</li>
 </ul>
-</div>
-</section>
-<section id="contact">
-<h2>Contact</h2>
-<p>Affiliation: University of the Philippines Diliman</p>
-<p>Feel free to reach out for research collaborations or academic inquiries.</p>
 </section>
 <footer>
-<p>&copy; 2023 Rhei Joven Genove Juan. Built for academic portfolio.</p>
+<p>&copy; 2024 Rhei Joven Genove Juan | Portfolio generated for academic visibility</p>
 </footer>
 <script>
 console.log("Portfolio loaded successfully.");
-document.querySelectorAll('a').forEach(link => {
-link.addEventListener('click', e => {
-console.log('Navigating to:', e.target.href);
-});
+document.querySelectorAll('.card').forEach(c => {
+c.addEventListener('mouseover', () => c.style.backgroundColor = '#fee2e2');
+c.addEventListener('mouseout', () => c.style.backgroundColor = '#f9fafb');
 });
 </script>
 </body>
